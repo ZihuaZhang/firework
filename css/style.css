@@ -13,8 +13,8 @@
   align-items: center;
 }
 .container .box {
-  width: 350px;
-  height: 250px;
+  width: 450px;
+  height: 300px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -25,7 +25,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 60px;
+  height: 80px;
 }
 .container .box .title .block {
   width: 0%;
@@ -36,15 +36,17 @@
   display: flex;
 }
 .container .box .title h1 {
+	cursor: default;
   font-family: 'Poppins';
   color: #fff;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 50px;
   animation: mainFadeIn 2s forwards;
   animation-delay: 1.6s;
   opacity: 0;
 }
 .container .box .title h1 span {
+	cursor: default;
   color: #ffb510;
 }
 .container .box .role {
@@ -65,13 +67,14 @@
   display: flex;
 }
 .container .box .role p {
+	cursor: default;
   animation: secFadeIn 2s forwards;
   animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
   font-family: 'ADayInAutumn';
   color: #ffffff;
-  font-size: 17px;
+  font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -124,5 +127,65 @@
 @font-face{
 	font-family: 'ADayInAutumn';
 	src : url('Louis George Cafe Italic.ttf');
+}
+
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@-webkit-keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typer-target {
+	animation: blink-caret 0.5s step-end infinite alternate;
+  border-right: 1px solid #fafafa;
+	color: #ffffff;
+	font-size: 50px;
+  font-weight: bold;
+	line-height: normal;
+	margin: 0;
+	margin-right: 80px;
+	margin-bottom: 80px;
+	display: inline-block;
+}
+
+.typer-target > span {
+	font-weight: 300;
+}
+
+main {
+	position: absolute;
+	right: 0;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 50px;
+	bottom: 0;
+	cursor: default;
+}
+
+
+
+.btn-run:active {
+	box-shadow: inset 0 3px 5px 0px rgba(0, 0, 0, .1);
 }
 
