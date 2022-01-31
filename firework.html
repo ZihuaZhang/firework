@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>firework</title>
+	<link rel="stylesheet" href="css/twinkle.css">
+    <style>
+        html,
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        body {
+            background-image: url(bg.png);
+            background-size: 100% 100%;
+            background-size: 100%; 
+            background-repeat:no-repeat;
+        }
+
+        .demo {
+            margin: 0 auto;
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            margin: 150px auto 30px auto;
+            text-align: center;
+            font-family: 'Roboto';
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+		<div>
+			<div class="stars"></div>
+			<div class="moon"></div>
+			<div class="twinkl"></div>
+		</div>
+    </div>
+	
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="fireworks.js"></script>
+    <script>
+        $('.demo').fireworks({
+            sound: true,
+            opacity: 0.6,
+            width: '100%',
+            height: '100%'
+        });
+    </script>
+	
+</body>
+
+</html>
