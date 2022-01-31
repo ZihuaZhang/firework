@@ -25,7 +25,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 80px;
+  height: 40px;
 }
 .container .box .title .block {
   width: 0%;
@@ -40,7 +40,7 @@
   font-family: 'Poppins';
   color: #fff;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 25px;
   animation: mainFadeIn 2s forwards;
   animation-delay: 1.6s;
   opacity: 0;
@@ -74,7 +74,7 @@
   font-weight: 400;
   font-family: 'ADayInAutumn';
   color: #ffffff;
-  font-size: 35px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -160,7 +160,7 @@ body {
 	animation: blink-caret 0.5s step-end infinite alternate;
   border-right: 1px solid #fafafa;
 	color: #ffffff;
-	font-size: 50px;
+	font-size: 18px;
   font-weight: bold;
 	line-height: normal;
 	margin: 0;
